@@ -1,0 +1,14 @@
+{
+	"name": "responsive-ajax",
+	"version": "1.0.0",
+	"author": "Matthew Caruana Galizia <m@m.cg>",
+	"description": "Responsive AJAX for people who know what they're doing",
+	"main": "./ajax.js",
+	"dependencies": {
+		"tiny-deferred": ">= 1.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mattcg/responsive-ajax.git"
+	}
+}
