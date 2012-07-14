@@ -8,7 +8,7 @@ All methods return an instance of `Deferred` created by [tiny-deferred](https://
 
 ### sendForm(form)
 
-Extract the name and value pairs from all the form's controls and submit them using AJAX. The `action` attribute of the form is used for the request. Methods that aren't supported by HTML forms can be shimmed by adding a form control with the name `_method` (currently only supports `PUT` and `DELETE`).
+Extract the name and value pairs from all the form's controls and submit them using AJAX. The `action` attribute of the form is used for the request. Methods that aren't supported by HTML forms can be shimmed by adding a form control with the name `_method` (currently only supports `PUT` and `DELETE`). Don't forget to make sure your server supports `_method` for browsers without JavaScript.
 
 The `enctype` and `method` attributes of the form may be significant. If the `enctype` attribute is explicitly set to `multipart/form-data` or the form contains a `file` type control then `POST` will be assumed (unless the form contains a control named `_method` with a value of `PUT`).
 
