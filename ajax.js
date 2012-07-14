@@ -139,7 +139,7 @@ function sendMultipartForm(form) {
 
 	// Allow unsupported (by HTML) PUT to be shimmed, otherwise assume POST
 	var method = (form.elements._method && form.elements._method.toUpperCase()) || 'POST';
-	return sendRequest(method, form.action, null, new FormData(form), 'multipart/form-data');
+	return sendRequest(method, form.action, null, new FormData(form));
 }
 
 
