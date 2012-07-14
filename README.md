@@ -4,7 +4,7 @@ Responsive AJAX for people who know what they're doing.
 
 ## Methods
 
-All methods return an instance of `Deferred` created by [tiny-deferred](https://github.com/mattcg/tiny-deferred).
+All asynchronous methods return an instance of `Deferred` created by [tiny-deferred](https://github.com/mattcg/tiny-deferred).
 
 ### sendForm(form)
 
