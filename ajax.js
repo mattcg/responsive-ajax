@@ -214,7 +214,7 @@ exports.postJSON = function(path, data, headers) {
  * @returns {Deferred}
  */
 exports.del = function(path, data, headers) {
-	return send('DELETE', path, headers);
+	return send('DELETE', path, data, headers);
 };
 
 
@@ -227,7 +227,7 @@ exports.del = function(path, data, headers) {
  * @returns {Deferred}
  */
 exports.get = function(path, data, headers) {
-	return send('GET', path, headers);	
+	return send('GET', path, data, headers);	
 };
 
 
